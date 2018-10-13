@@ -1,0 +1,33 @@
+1. C#当中的枚举值直接输出是字符串，如果要转化为整型，需要使用强制转化
+2. 默认访问修饰符，类的默认访问表示符是internal 成员的默认访问标识符号是private
+3. C# 中的析构函数
+  类的析构函数,是类的一个特殊的成员函数,当类的对象超出范围时执行。
+  析构函数的名称是在类的名称前加上一个波浪形（~）作为前缀，它不返回值,也不带任何参数。
+  析构函数用于在结束程序（比如关闭文件、释放内存等）之前释放资源.析构函数不能继承或重载。
+4. C#中的setter 和 getter
+    class A
+    {
+      private int data;
+      // setter getter
+      public int MyData
+      {
+        set
+        {
+          Console.WriteLine("this is Setter");
+          data = value;
+        }
+        get
+        {
+          Console.WriteLine("this is getter");
+          return data;
+        }
+      }
+    }
+5. c#不支持多继承
+6. 抽象类在某种程度上与接口类似，但是，它们大多只是用在当只有少数方法由基类声明由派生类实现时。
+7. c#重载运算符号
+    // 重载运算符号
+		public static A operator+ (A a1, A a2) {
+			Console.WriteLine("c#使用重载运算符号");
+			return a1;
+		}
